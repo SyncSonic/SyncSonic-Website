@@ -107,8 +107,9 @@ header {
 }
 
 .hero-buttons-button {
-  padding: 1rem 2rem;
+  padding: 0.85rem 1.75rem;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
   transition-duration: 0.4s;
   background-color: transparent;
