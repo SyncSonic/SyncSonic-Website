@@ -1,25 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   box-sizing: border-box;
-}
-
-.bg-gradient {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(
+  background-image: repeating-linear-gradient(
     to bottom,
     rgba(65, 105, 225, 0.53),
     rgba(128, 0, 128, 0.322)
   );
-  position: absolute;
   background-size: cover;
-  z-index: -2;
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   height: 3.2rem;
   display: flex;
   justify-content: space-between;
@@ -30,6 +24,12 @@ body {
 .navbar-logo {
   font-size: 1.5rem;
   margin: auto 1rem;
+  color: #f0f0f0;
+}
+
+.navbar-logo:hover {
+  color: #56b3b7;
+  /* color: #007bff; */
 }
 
 .navbar ul {
@@ -46,12 +46,14 @@ body {
   font-size: 1.2rem;
   padding: 0.5rem;
   display: block;
-  color: #1a1a3f;
+  color: #2e2e38;
+  /* color: #3B0A74; */
 }
 
 .navbar ul li a:hover {
   color: #d9d9d9;
   background-color: rgb(217, 217, 217, 0.2);
+  background-color: #3b0a743d;
 }
 
 .navbar-hamburger {
@@ -73,9 +75,60 @@ body {
   transition: all ease-in-out 0.2s;
 }
 
+header {
+  display: flex;
+  height: 100vh;
+  padding-top: 10vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero {
+  font-size: 1.2rem;
+}
+
+.hero-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #e0d8ff;
+}
+
+.hero-text:hover {
+  color: #a482c4;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 2rem 5rem;
+}
+
+.hero-buttons-button {
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  background-color: transparent;
+  color: #f0f0f0;
+  border: 2px solid #2e2e38;
+}
+
+.hero-buttons-button:hover {
+  background-color: #a482c4;
+  color: #e0d8ff;
+}
+
 @media screen and (max-width: 550px) {
+  header {
+    padding-top: 25vh;
+  }
+
   .navbar-hamburger {
     display: flex;
+    z-index: 1;
   }
   .navbar {
     flex-direction: column;
@@ -94,12 +147,14 @@ body {
 
   .navbar-links[active] {
     top: 0;
+    z-index: 0;
   }
 
   .navbar-links ul {
     width: 100%;
     padding: 3rem 0 0.6rem;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .navbar-links ul li {
