@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   background-image: repeating-linear-gradient(
-    to bottom,
+    to top,
     rgba(65, 105, 225, 0.53),
     rgba(128, 0, 128, 0.322)
   );
@@ -169,12 +169,105 @@ header {
 
 .features-elements-row-element:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 10px rgb(87, 82, 121);;
+  box-shadow: 0 0 10px rgb(87, 82, 121);
 }
 
 .features-elements-row-element-description {
   display: flex;
   flex-direction: row;
+}
+
+#signUp {
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUp h1 {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.signUp-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7rem;
+  color: #172347;
+}
+
+.signUp-box {
+  display: inline-block;
+  border: 2px;
+  padding: 2rem;
+  background-color: rgb(255, 240, 245, 0.45);
+  flex-direction: column;
+  border-radius: 25px;
+  color: #172347;
+}
+
+.signUp-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUp-box-title,
+.signUp-contact-title {
+  font-size: 2rem;
+}
+
+.signUp-box-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUp-contact-links a,
+.signUp-box-form input,
+select,
+button {
+  padding: 1rem;
+  margin: 0.4rem;
+  border-radius: 5px;
+  border: 2px solid #c0c4d6;
+}
+
+.signUp-contact-links a {
+  text-decoration: none;
+  color: #172347;
+  border: 2px solid #2e2e38;
+}
+
+.signUp-box-form button {
+  background-image: repeating-linear-gradient(to right, #7b8cff, #ba77e7);
+}
+
+.signUp-contact-links a:hover,
+.signUp-box-form button:hover {
+  background-image: repeating-linear-gradient(to right, #4d5ecf, #b453f4);
+  cursor: pointer;
+}
+
+.signUp-contact-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1220px) {
+  .features-elements-row {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .features-elements-row-element {
+    padding: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
