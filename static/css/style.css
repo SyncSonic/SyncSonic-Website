@@ -9,6 +9,11 @@ body {
     rgba(128, 0, 128, 0.322)
   );
   background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -46,7 +51,7 @@ body {
   font-size: 1.2rem;
   padding: 0.5rem;
   display: block;
-  color: #2e2e38;
+  color: #78788e;
   /* color: #3B0A74; */
 }
 
@@ -86,16 +91,28 @@ header {
 
 .hero {
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.hero-text {
-  display: flex;
+.hero-video-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.main-text {
+  display: inline-block;
+  align-self: center;
   text-align: center;
-  justify-content: center;
   color: #e0d8ff;
 }
 
-.hero-text:hover {
+.main-text:hover {
   color: #a482c4;
 }
 
@@ -106,7 +123,7 @@ header {
   padding: 2rem 5rem;
 }
 
-.hero-buttons-button {
+.button {
   padding: 0.85rem 1.75rem;
   text-align: center;
   text-decoration: none;
@@ -117,9 +134,47 @@ header {
   border: 2px solid #2e2e38;
 }
 
-.hero-buttons-button:hover {
+.button:hover {
   background-color: #a482c4;
   color: #e0d8ff;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features h1 {
+  font-size: 3rem;
+}
+
+.features-elements-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  padding: 2rem;
+}
+
+.features-elements-row-element {
+  display: inline-block;
+  border: 2px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 25px;
+  width: 17rem;
+  text-align: center;
+}
+
+.features-elements-row-element:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px rgb(87, 82, 121);;
+}
+
+.features-elements-row-element-description {
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (max-width: 550px) {

@@ -8,7 +8,14 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../static/js/navbar.js"></script>
+    <script>
+      $("#bgVideo").on("ended", function () {
+        this.load();
+        this.play();
+      });
+    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -23,6 +30,7 @@
           <li class="navbar-link"><a href="#home">Home</a></li>
           <li class="navbar-link"><a href="#features">Features</a></li>
           <li class="navbar-link"><a href="#demo">Demo</a></li>
+          <li class="navbar-link"><a href="#signUp">Sign Up</a></li>
           <li class="navbar-link"><a class="uil uil-sun" href="#"></a></li>
         </ul>
       </div>
@@ -31,22 +39,82 @@
     <section id="home">
       <header>
         <div class="hero">
-          <h1 class="hero-text">Record Together. Create Together.</h1>
-          <h2 class="hero-text">
+          <div class="hero-video">
+            <video
+              class="hero-video-video"
+              autoplay
+              muted
+              playsinline
+              loop
+              id="bgVideo"
+              src="/static/assets/vid.mp4"
+            ></video>
+          </div>
+          <h1 class="main-text">Record Together. Create Together.</h1>
+          <h2 class="main-text">
             Experience real-time multi-device recording.
           </h2>
           <div class="hero-buttons">
             <a
-              class="hero-buttons-button"
+              class="button"
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               target="_blank"
             >
               Watch Demo
             </a>
-            <a class="hero-buttons-button"> Learn More </a>
+            <a class="button"> Learn More </a>
           </div>
         </div>
       </header>
+    </section>
+    <section id="features">
+      <div class="features">
+        <h1 class="main-text">Features</h1>
+        <div class="features-elements-row">
+          <div class="features-elements-row-element">
+            <h2>Synced Recording</h2>
+            <div class="features-elements-row-element-description">
+              <div class="uil uil-sync" style="font-size: 4rem"></div>
+              <p>Record across multiple devices, auto-combined or seperate</p>
+            </div>
+          </div>
+          <div class="features-elements-row-element">
+            <h2>Direct-to-Cloud</h2>
+            <div class="features-elements-row-element-description">
+              <div class="uil uil-cloud-upload" style="font-size: 4rem"></div>
+              <p>Record directly to the cloud without needing space on disk</p>
+            </div>
+          </div>
+          <div class="features-elements-row-element">
+            <h2>Back-in-Time Recording</h2>
+            <div class="features-elements-row-element-description">
+              <div class="uil uil-clock" style="font-size: 4rem"></div>
+              <p>
+                Buffer of background recording to ensure you don't miss anything
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="features-elements-row">
+          <div class="features-elements-row-element">
+            <h2>Peer-to-Peer Sending</h2>
+            <div class="features-elements-row-element-description">
+              <div class="uil uil-data-sharing" style="font-size: 4rem"></div>
+              <p>Send files to peers with one-off direct transfers</p>
+            </div>
+          </div>
+          <div class="features-elements-row-element">
+            <h2>Cloud File Hosting</h2>
+            <div class="features-elements-row-element-description">
+              <div class="uil uil-dropbox" style="font-size: 4rem"></div>
+              <p>
+                Keep your recordings securely stored and accessible through the
+                cloud
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
