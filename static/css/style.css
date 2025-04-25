@@ -134,6 +134,27 @@ header {
   border: 2px solid #2e2e38;
 }
 
+.hero-callToAction {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-callToAction-button {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(158, 65, 225, 0.8),
+    rgba(0, 68, 128, 0.7)
+  );
+  border-radius: 25px;
+  color: #172347;
+}
+
+.hero-callToAction-button:hover {
+  background-image: repeating-linear-gradient(to right, #4d5ecf, #b453f4);
+}
+
 .button:hover {
   background-color: #a482c4;
   color: #e0d8ff;
