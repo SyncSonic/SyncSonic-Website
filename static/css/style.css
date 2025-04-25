@@ -142,7 +142,7 @@ header {
 .hero-callToAction-button {
   padding: 1.5rem;
   margin-top: 2rem;
-  background-image: repeating-linear-gradient(
+  background-image: linear-gradient(
     to right,
     rgba(158, 65, 225, 0.8),
     rgba(0, 68, 128, 0.7)
@@ -152,7 +152,7 @@ header {
 }
 
 .hero-callToAction-button:hover {
-  background-image: repeating-linear-gradient(to right, #4d5ecf, #b453f4);
+  background-image: linear-gradient(to right, #4d5ecf, #b453f4);
 }
 
 .button:hover {
@@ -268,12 +268,12 @@ button {
 }
 
 .signUp-box-form button {
-  background-image: repeating-linear-gradient(to right, #7b8cff, #ba77e7);
+  background-image: linear-gradient(to right, #7b8cff, #ba77e7);
 }
 
 .signUp-contact-links a:hover,
 .signUp-box-form button:hover {
-  background-image: repeating-linear-gradient(to right, #4d5ecf, #b453f4);
+  background-image: linear-gradient(to right, #4d5ecf, #b453f4);
   cursor: pointer;
 }
 
