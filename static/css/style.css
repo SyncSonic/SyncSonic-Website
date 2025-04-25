@@ -198,7 +198,9 @@ header {
 .signUp-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 7rem;
   color: #172347;
 }
@@ -267,6 +269,13 @@ button {
   }
   .features-elements-row-element {
     padding: none;
+  }
+  .signUp-content {
+    padding: 1rem;
+    justify-content: center;
+  }
+  #signUp {
+    padding-bottom: none;
   }
 }
 
