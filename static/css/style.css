@@ -62,8 +62,8 @@ html {
 }
 
 .navbar-hamburger {
-  width: 1.875rem;
-  height: 1.313rem;
+  width: 1.8rem;
+  height: 1.3rem;
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -73,10 +73,10 @@ html {
 }
 
 .navbar-hamburger-line {
-  height: 0.188rem;
+  height: 0.2rem;
   width: 100%;
   background-color: white;
-  border-radius: 0.625rem;
+  border-radius: 0.6rem;
   transition: all ease-in-out 0.2s;
 }
 
