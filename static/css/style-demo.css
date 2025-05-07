@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(24, 24, 24);
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  color: rgb(240, 240, 240);
+}
+
+.profileBar-bar,
+.page-bar {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: #24272d;
+  margin-bottom: 2rem;
+}
+
+.profileBar-bar {
+  justify-content: space-between;
+}
+
+.page-bar button {
+    margin: 0 2rem;
+}
+
+.button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(240, 240, 240);
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.mainDemoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainDemoContent-wave {
+  display: flex;
+  height: 11rem;
+  width: auto;
+  border-radius: 10px;
+}
+
+.mainDemoContent-record {
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 1rem;
+  background-color: #414143;
+  font-size: 1.2rem;
+  color: rgb(204, 202, 202);
+}
+
+.mainDemoContent-record:hover {
+  cursor: pointer;
+  background-color: #24272d;
+  color: rgb(24, 24, 24);
+}
