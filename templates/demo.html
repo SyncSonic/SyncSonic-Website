@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../static/css/style-demo.css" />
     <script src="../static/js/dropdown_iframe.js"></script>
+    <script src="../static/js/page_iframe.js"></script>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -35,22 +36,33 @@
       </div>
     </header>
     <div class="mainDemoContent">
-      <img
-        class="mainDemoContent-wave"
-        src="../static/assets/freepik__adjust__25779.png"
-      />
-      <button class="mainDemoContent-record">Record</button>
+      <div id="record-content" class="mainDemoContent-record">
+        <img
+          class="mainDemoContent-wave"
+          src="../static/assets/freepik__adjust__25779.png"
+        />
+        <button class="mainDemoContent-record-button">Record</button>
+      </div>
+
+      <div id="upload-content" class="mainDemoContent-upload">
+        <div class="mainDemoContent-upload-dropBox"></div>
+      </div>
+
+      <div id="files-content" class="mainDemoContent-files"></div>
     </div>
 
     <div class="page-bar">
-      <button class="button uil uil-record-audio">Record</button>
+      <button
+        id="record-button"
+        class="active-button button uil uil-record-audio"
+      >
+        Record
+      </button>
       <span></span>
-      <button class="button uil uil-upload">Upload</button>
+      <button id="upload-button" class="button uil uil-upload">Upload</button>
       <span></span>
-      <button class="button uil uil-folder">Files</button>
+      <button id="files-button" class="button uil uil-folder">Files</button>
       <span></span>
     </div>
-
-    <script src="" async defer></script>
   </body>
 </html>

@@ -17,11 +17,17 @@ body {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   background-color: #24272d;
-  margin-bottom: 2rem;
+}
+
+.page-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .profileBar-bar {
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .profileBar-bar-settings {
@@ -37,14 +43,14 @@ body {
 }
 
 .profileBar-bar-settings-dropdown a {
-  color: rgb(51, 57, 77);
+  color: rgb(61, 71, 101);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 .page-bar button {
@@ -64,7 +70,11 @@ body {
   cursor: pointer;
 }
 
-.mainDemoContent {
+.active-button {
+  color: #414b94b8;
+}
+
+.mainDemoContent-record {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +87,7 @@ body {
   border-radius: 10px;
 }
 
-.mainDemoContent-record {
+.mainDemoContent-record-button {
   display: block;
   height: 5rem;
   width: 5rem;
@@ -88,8 +98,25 @@ body {
   color: rgb(204, 202, 202);
 }
 
-.mainDemoContent-record:hover {
+.mainDemoContent-record-button:hover {
   cursor: pointer;
   background-color: #24272d;
   color: rgb(24, 24, 24);
+}
+
+.mainDemoContent-upload {
+  display: none;
+  justify-content: center;
+}
+
+.mainDemoContent-upload-dropBox {
+  display: flex;
+  height: 15rem;
+  width: 18rem;
+  background-color: #24272d;
+  border: 4px solid rgb(240, 240, 240);
+}
+
+.mainDemoContent-files {
+  display: none;
 }
