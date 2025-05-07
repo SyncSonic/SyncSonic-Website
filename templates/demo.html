@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../static/css/style-demo.css" />
+    <script src="../static/js/dropdown_iframe.js"></script>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -16,10 +17,21 @@
     <header class="profileBar">
       <div class="profileBar-bar">
         <div class="profileBar-bar-account">
-          <button class="button uil uil-user-circle"></button>
+          <button id="user-button" class="button uil uil-user-circle"></button>
           <span> Brian</span>
         </div>
-        <button class="button uil uil-ellipsis-h"></button>
+
+        <div class="profileBar-bar-settings">
+          <button
+            id="settings-button"
+            class="button uil uil-ellipsis-h"
+          ></button>
+          <div id="settings-dropdown" class="profileBar-bar-settings-dropdown">
+            <a href="#">Settings</a>
+            <a href="#">retards</a>
+            <a href="#">robocops</a>
+          </div>
+        </div>
       </div>
     </header>
     <div class="mainDemoContent">
@@ -31,11 +43,11 @@
     </div>
 
     <div class="page-bar">
-      <button class="button uil uil-record-audio"> Record</button>
+      <button class="button uil uil-record-audio">Record</button>
       <span></span>
-      <button class="button uil uil-upload"> Upload</button>
+      <button class="button uil uil-upload">Upload</button>
       <span></span>
-      <button class="button uil uil-folder"> Files</button>
+      <button class="button uil uil-folder">Files</button>
       <span></span>
     </div>
 

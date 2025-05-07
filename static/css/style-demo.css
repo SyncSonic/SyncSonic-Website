@@ -24,8 +24,31 @@ body {
   justify-content: space-between;
 }
 
+.profileBar-bar-settings {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.profileBar-bar-settings-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.profileBar-bar-settings-dropdown a {
+  color: rgb(51, 57, 77);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
 .page-bar button {
-    margin: 0 2rem;
+  margin: 0 2rem;
 }
 
 .button {
