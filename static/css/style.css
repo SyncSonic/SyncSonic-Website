@@ -377,6 +377,15 @@ button {
     position: relative;
   }
 
+  .demo-callToAction li {
+    font-size: 1rem;
+  }
+
+  .demo-callToAction ul {
+    display: flex;
+    gap: 2rem;
+  }
+
   .demo-showcase iframe {
     width: 100%;
     height: 100%;
