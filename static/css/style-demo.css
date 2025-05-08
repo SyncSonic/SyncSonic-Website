@@ -115,6 +115,36 @@ body {
   width: 18rem;
   background-color: #24272d;
   border: 4px solid rgb(240, 240, 240);
+  justify-content: center;
+}
+
+.mainDemoContent-upload-dropBox-text {
+  padding-top: 1rem;
+}
+
+.mainDemoContent-upload-infoBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 4px solid white;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.mainDemoContent-upload-infoBox:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(87, 82, 121);
+}
+
+.mainDemoContent-upload-infoBox-folder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
 }
 
 .mainDemoContent-files {
