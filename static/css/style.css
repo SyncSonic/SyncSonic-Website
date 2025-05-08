@@ -61,25 +61,6 @@ html {
   background-color: #3b0a743d;
 }
 
-.navbar-hamburger {
-  width: 1.8rem;
-  height: 1.3rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-.navbar-hamburger-line {
-  height: 0.2rem;
-  width: 100%;
-  background-color: white;
-  border-radius: 0.6rem;
-  transition: all ease-in-out 0.2s;
-}
-
 header {
   display: flex;
   height: 100vh;
@@ -389,38 +370,7 @@ button {
     padding-top: 25vh;
   }
 
-  .navbar-hamburger {
-    display: flex;
-    z-index: 1;
-  }
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar-links {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    background-color: rgb(217, 217, 217, 0.2);
-    width: 100%;
-    top: -50rem;
-    transition: all ease-in-out 0.4s;
-    z-index: -1;
-  }
-
-  .navbar-links[active] {
-    top: 0;
-    z-index: 0;
-  }
-
-  .navbar-links ul {
-    width: 100%;
-    padding: 3rem 0 0.6rem;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .navbar-links ul li {
-    text-align: center;
+    display: none;
   }
 }
