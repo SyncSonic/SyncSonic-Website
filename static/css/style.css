@@ -370,6 +370,25 @@ button {
     padding-top: 25vh;
   }
 
+  .demo-showcase {
+    width: 100%;
+    min-height: 28rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .demo-showcase iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .demo-showcase-svg {
+    display: none;
+  }
+  .hero-video-video {
+    display: none;
+  }
+
   .navbar {
     display: none;
   }
