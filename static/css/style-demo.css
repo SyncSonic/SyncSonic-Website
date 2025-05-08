@@ -150,3 +150,14 @@ body {
 .mainDemoContent-files {
   display: none;
 }
+
+.mainDemoContent-files-file {
+  padding: 0 1rem;
+  font-size: 3rem;
+}
+
+.mainDemoContent-files-file:hover {
+  /* box-shadow: 0 0 10px rgb(87, 82, 121); */
+  background-color: #414143;
+  cursor: pointer;
+}
