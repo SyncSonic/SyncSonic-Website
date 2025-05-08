@@ -354,14 +354,14 @@ button {
     padding: 1rem;
   }
   .features-elements-row-element {
-    padding: none;
+    padding: 0;
   }
   .signUp-content {
     padding: 1rem;
     justify-content: center;
   }
   #signUp {
-    padding-bottom: none;
+    padding-bottom: 0;
   }
 }
 
