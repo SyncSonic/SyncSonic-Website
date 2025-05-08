@@ -382,7 +382,6 @@ button {
   }
 
   .demo-callToAction ul {
-    display: flex;
     gap: 2rem;
   }
 
